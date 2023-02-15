@@ -1,0 +1,116 @@
+.footer {
+  background: #000000;
+}
+
+.footer-container {
+  max-width: 1200px;
+  padding: 120px 20px 60px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: #cccccc;
+}
+
+.footer-contato {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  color: #fff;
+}
+
+.footer-contato h3 {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #cccccc;
+}
+
+.footer-contato a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-contato a:hover {
+  color: #fd5472;
+}
+
+.footer-copy {
+  grid-column: 1 / -1;
+  font-size: 1.125rem;
+  color: #8F8F8F;
+}
+
+.footer-contato li {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.footer-contato h3 {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.footer-contato h3::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: -4px;
+  left: -36px;
+}
+
+.email h3::before {
+  background: url("../img/email.svg") no-repeat center center;
+}
+
+.celular h3::before {
+  background: url("../img/celular.svg") no-repeat center center;
+}
+
+.linkedin h3::before {
+  background: url("../img/linkedin.svg") no-repeat center center;
+}
+
+@media (max-width: 800px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+
+  .footer-contato li {
+    font-size: 0.875rem;
+    margin-bottom: 25px;
+  }
+
+  .footer-contato h3 {
+    font-size: 0.875rem;
+    margin-bottom: 5px;
+  }
+
+  .footer-texto {
+    font-size: 0.875rem;
+    max-width: 35ch;
+  }
+
+  .footer-contato h3::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
+
+  .footer-copy {
+    font-size: 0.875rem;
+  }
+}
